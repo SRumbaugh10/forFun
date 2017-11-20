@@ -3,12 +3,24 @@
     "version": "1.0.0",
     "description": "",
     "main": "",
-    "repository":"",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SRumbaugh10/forFun.git"
+    },
+    "keywords": [
+        "Fun",
+        "Node.js",
+        "JavaScript"
+    ],
     "scripts": {
-        
+        "deploy": "surge"
     },
     "author": "Stephanie Rumbaugh",
-    "license": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SRumbaugh10/forFun/issues"
+      },
+    "homepage": "https://github.com/SRumbaugh10/forFun#readme",
     "dependencies": {
         
     },
