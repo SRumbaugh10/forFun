@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background: #d4f3ff;
+}
+
+#main{
+    margin:1% 2%;
+}
+
+header{
+    background: linear-gradient(#227fab, #4198bd, #d4f3ff);    
+    min-height: 100px;
+}
+
+h1{
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 3em;
+}
+
+footer{
+    background: linear-gradient(#d4f3ff, #4198bd, #227fab);    
+    min-height: 100px;
+
+}
+
+h3{
+    background: lightgray;
+}
+.col-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+/* Three Column formatting */
+.three-col {
+	width:31%;
+    display: inline-block;
+    margin:.5% 1%;
+    padding:5px 10px;
+    background: lightslategray;
+}
+.three-col strong{
+    color: rgb(35, 35, 169) ;
+}
+
+
+/* Two Column formatting */
+.two-col {
+    width:47%;
+    display: inline-block;
+    margin:.5% 1%;
+    padding:5px 10px;
+    background: lightskyblue;
+}
+
+.two-col strong{
+    color: rgb(0, 100, 0);
+}
+
+/* One Column formatting */
+.one-col {
+    width:97%;
+    display: inline-block;
+    margin:.5% 1%;
+    padding:5px 10px;
+    background: lightgreen;
+}
+
+.one-col strong{
+    color: rgb(110, 46, 72) ;
+}
