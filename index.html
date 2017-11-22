@@ -5,57 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Just for Fun</title>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>    
-        <h1>So much fun!!</h1>    
-        <nav>
-        </nav>
-    </header>
+    <div id="header" class="col-container">  
+        <div class="one-col">
+            <label for="winningScore" class="winningScoreLabel">How many points would you like to play to?</label><br>
+            <input class="winningScore" type="text" alt="How many points would you like to play to?" />     
+        </div>  
+    </div>
 
-    <div id="main">
+    <div id="main" class="clearfix">
         <div class="hr"><hr></div> 
-        <h3>Meet the Elephants</h3>
-        <div class="col-container">   
-            <div class="one-col">
-                <h4>A block of a lot of characters and words and stuff and different things that don't matter.</h4>     
-                <p><strong>Name</strong><br>Some words</p>
+        <div class="col-container">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
             </div>
-        </div>
-        <div class="col-container">   
-            <div class="two-col">
-                <h4>A block of a lot of characters and words and stuff and different things that don't matter.</h4>   
-                <p><strong>Name</strong><br>Some words</p>
+            
+            <div class = "action-col">
+                <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+                <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+                <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+               
+                <img src="images/dice-5.PNG" alt="Dice" class="dice">
+                <img src="images/dice-5.PNG" alt="2nd Dice" class="dice2">
             </div>
-        
-            <div class="two-col">
-                <h4>A block of a lot of characters and words and stuff and different things that don't matter.</h4> 
-                <p><strong>Name</strong><br>Some words</p>
-            </div>
-        </div>
-        <div class="col-container">   
-            <div class="three-col">
-                <h4>A block of a lot of characters and words and stuff and different things that don't matter.</h4>    
-                <p><strong>Name</strong><br>Some words</p>
-            </div>
-        
-            <div class="three-col">
-                <h4>A block of a lot of characters and words and stuff and different things that don't matter.</h4>  
-                <p><strong>Name</strong><br>Some words</p>
-            </div>
-        
-            <div class="three-col">
-                <h4>A block of a lot of characters and words and stuff and different things that don't matter.</h4>   
-                <p><strong>Name</strong><br>Some words</p>
+
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
             </div>
         </div>
         <div class="hr"><hr></div> 
     </div>
 
     <footer>
-            
+        <div class="col-container">  
+            <div class="one-col">
+                <ul><strong>Game Rules:</strong>
+                    <li>Players will take turns rolling the dice, each player may roll the dice as many times as they want.</li>
+                    <li>To end your turn press the "HOLD" button and your current points will be added to your total points.</li>
+                    <li>The first player to reach the number of points chosen at the beginning of the game without going over wins.</li>
+                    <li>If you go over you will loose all your points.</li>
+                    <li>If you role a one you will loose your current points and your turn will be over.</li>
+                    <li>If you role two 6s in a row or double 6s you will loose all your points and your turn will be over.</li>
+                </ul>                 
+            </div>  
+        </div>            
     </footer>
     
     <script src="javaScript/app.js"></script>

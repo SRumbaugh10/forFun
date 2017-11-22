@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body{
     margin: 0;
     background: #d4f3ff;
@@ -5,71 +17,167 @@ body{
 
 #main{
     margin:1% 2%;
+    overflow: hidden;
 }
 
-header{
-    background: linear-gradient(#227fab, #4198bd, #d4f3ff);    
-    min-height: 100px;
-}
-
-h1{
-    margin-top: 0;
-    padding: 10px;
-    text-align: center;
-    font-size: 3em;
+#header{
+    background: linear-gradient(#227fab, #4198bd, #d4f3ff);  
 }
 
 footer{
     background: linear-gradient(#d4f3ff, #4198bd, #227fab);    
-    min-height: 100px;
 
 }
 
-h3{
-    background: lightgray;
-}
 .col-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
-/* Three Column formatting */
-.three-col {
-	width:31%;
-    display: inline-block;
-    margin:.5% 1%;
-    padding:5px 10px;
-    background: lightslategray;
-}
-.three-col strong{
-    color: rgb(35, 35, 169) ;
-}
-
-
-/* Two Column formatting */
-.two-col {
-    width:47%;
-    display: inline-block;
-    margin:.5% 1%;
-    padding:5px 10px;
-    background: lightskyblue;
-}
-
-.two-col strong{
-    color: rgb(0, 100, 0);
-}
-
-/* One Column formatting */
 .one-col {
     width:97%;
     display: inline-block;
-    margin:.5% 1%;
-    padding:5px 10px;
-    background: lightgreen;
+    padding:20px 10px 10px 10px;
+    text-align: center;
 }
 
-.one-col strong{
-    color: rgb(110, 46, 72) ;
+ul{
+    list-style: none;
 }
+
+.player-0-panel,
+.player-1-panel {
+    width: 37%;
+    display: inline-block;
+    height: 425px;
+    margin:.5% 1%;
+    padding:5px 10px;
+    text-align: center;    
+}
+
+.action-col{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    margin:.5% 0;
+    padding:30px 5px;
+}
+
+/**********************************************
+PLAYERS
+**********************************************/
+.player-name {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #0F3B63;
+}
+
+.player-score {
+    font-size: 75px;
+    font-weight: 100;
+    color: #0F3B63;
+    margin-bottom: 130px;
+}
+
+.active { background: #87cefa;}
+
+.active .player-name{
+    font-weight: bold;
+}
+
+
+.player-current-box {
+    background-color: #0F3B63;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+
+/**********************************************
+GAME CONTROLS
+**********************************************/
+button {
+    width: 155px;
+    color: #0F3B63;
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #0F3B63;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+
+.btn-roll { padding: 10px 0 0 0;}
+.btn-hold { padding: 10px 0 0 0;}
+.btn-new { padding: 10px 0 0 0;}
+
+.dice {
+    height: 125px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.dice2 {
+    height: 125px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.winner { background: #EDEDED url('../images/winner.jpg') no-repeat; background-size: 100% 100%;}
+.winner .player-name, .winner .player-score { font-weight: bold; font-size: 50px; color:#FFF;}
+.winner .player-current-box{display:none;}
+
+.winningScoreLabel{
+    font-weight: bold;
+    font-size: 25px;
+    color:#fff;
+}
+
+.winningScore{
+    height: 40px;
+    width: 100px;
+    background: #0F3B63;
+    color: #fff;    
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+}
+
+.winningScore:focus {outline:none;}

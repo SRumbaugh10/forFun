@@ -1,0 +1,158 @@
+@media screen and (max-width: 875px) {
+    .player-current-label {
+        font-size: 18px;
+    }
+    button {
+        width: 155px;
+        font-size: 18px;
+    }
+    i {
+        font-size: 30px;
+        margin-top: -4px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .player-current-box {
+        width: 60%;
+    }
+    button {
+        width: 125px;
+        font-size: 16px;
+    }
+    i {
+        margin-right: 5px;
+        font-size: 28px;
+        margin-top: -8px;
+    }
+
+    .winner .player-name,
+    .winner .player-score {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .player-0-panel,
+    .player-1-panel {
+        width: 35%;
+    }
+    
+    .action-col{
+        width: 25%;
+    }
+    .player-current-box {
+        width: 75%;
+    }
+    button {
+        width: 120px;
+        font-size: 16px;
+    }
+    .player-name {
+        font-size: 30px;
+    }
+    .winner .player-name,
+    .winner .player-score {
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 550px){
+    button {
+        width: 100px;
+        font-size: 13px;
+    }
+    i {
+        font-size: 25px;
+    }
+    .player-name {
+        font-size: 22px;
+    }
+    .player-current-label {
+        font-size: 15px;
+    }
+    .dice {
+        height: 100px;
+    }
+    .dice2 {
+        height: 100px;
+    }
+    .player-0-panel,
+    .player-1-panel {
+        width: 32%;
+        height: 350px;
+    }
+    .action-col{
+        width: 31%;
+    }
+    .player-current-box {
+        width: 75%;
+    }
+    .player-score {
+        margin-bottom: 100px;
+    }
+
+    .winner .player-name,
+    .winner .player-score {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .dice {
+        height: 85px;
+    }
+    .dice2 {
+        height: 85px;
+    }
+    .player-name {
+        font-size: 18px;
+    }
+    .player-current-label {
+        font-size: 10px;
+    }
+    .player-0-panel,
+    .player-1-panel {
+        height: 300px;
+    }
+    .player-score {
+        margin-bottom: 65px;
+    }
+    .winner .player-name,
+    .winner .player-score {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 375px){
+    .dice {
+        height: 75px;
+    }
+    .dice2 {
+        height: 75px;
+    }
+    .player-name {
+        font-size: 15px;
+    }
+    .player-current-label {
+        font-size: 8px;
+    }
+    button {
+        width: 85px;
+        font-size: 11px;
+    }
+    i {
+        font-size: 22px;
+    }
+    .btn-hold {
+        padding: 12px 0 0 0;
+    }
+    .winner .player-name,
+    .winner .player-score {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 350px){
+    .winner .player-name,
+    .winner .player-score {
+        font-size: 18px;
+    }
+}
