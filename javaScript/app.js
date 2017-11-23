@@ -36,17 +36,18 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
             alert("You rolled two sixes in a row, your turn is over and all your points are GONE!");
             nextPlayer();
         }
-        else if (dice !== 1 && dice2 !== 1){
+        else if (dice === 1 && dice2 === 1){
+            //Next Player
+            alert("You rolled double 1s, your turn is over, you earned 0 points this turn!");
+            nextPlayer();
+        }
+        else{
             //Add Score
             roundScore += dice + dice2;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
             diceOld = dice;
             diceOld2 = dice2;
-        }
-        else{
-            //Next Player
-            alert("You rolled a 1, your turn is over, you earned 0 points this turn!");
-            nextPlayer();
+
         }
     }
 });
