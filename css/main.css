@@ -22,10 +22,12 @@ body{
 
 #header{
     background: linear-gradient(#227fab, #4198bd, #d4f3ff);  
+    min-height: 125px;
 }
 
 footer{
     background: linear-gradient(#d4f3ff, #4198bd, #227fab);    
+    min-height: 125px;
 
 }
 
@@ -39,14 +41,19 @@ footer{
 .one-col {
     width:97%;
     display: inline-block;
-    padding:20px 10px 10px 10px;
+    padding:10px;
     text-align: center;
 }
 
 ul{
     list-style: none;
+    text-align: center;
+    margin-left: -100%;
+    padding: 15px 0 25px 0;
 }
-
+.winningScore::-webkit-input-placeholder{
+    color: rgba(255, 255, 255,.3);
+}
 .player-0-panel,
 .player-1-panel {
     width: 37%;
@@ -64,6 +71,13 @@ ul{
     align-content: center;
     margin:.5% 0;
     padding:30px 5px;
+}
+.new-game, .game-rules{
+    width: 50%;
+    display: inline-block;
+    margin:.5% 1% 0 1%;
+    padding:5px 10px 0px 10px;
+    text-align: right;    
 }
 
 /**********************************************
@@ -115,7 +129,7 @@ PLAYERS
 /**********************************************
 GAME CONTROLS
 **********************************************/
-button {
+button, summary {
     width: 155px;
     color: #0F3B63;
     background: none;
@@ -127,7 +141,7 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button:focus {
+button:focus, summary:focus {
     outline: none;
 }
 
@@ -144,18 +158,17 @@ i {
 
 
 .btn-roll { padding: 10px 0 0 0;}
-.btn-hold { padding: 10px 0 0 0;}
+.btn-hold { padding: 20px 0 0 0;}
 .btn-new { padding: 10px 0 0 0;}
+summary{padding: 10px 0 0 0;}
 
 .dice {
     height: 125px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
     padding-top: 20px;
     margin: 0 auto;
 }
 .dice2 {
     height: 125px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
     padding-top: 20px;
     margin: 0 auto;
 }

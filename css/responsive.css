@@ -2,10 +2,13 @@
     .player-current-label {
         font-size: 18px;
     }
-    button {
+    button, summary {
         width: 155px;
         font-size: 18px;
-    }
+    }    
+    ul{        
+        font-size: 18px;
+    }   
     i {
         font-size: 30px;
         margin-top: -4px;
@@ -16,10 +19,13 @@
     .player-current-box {
         width: 60%;
     }
-    button {
+    button, summary {
         width: 125px;
         font-size: 16px;
-    }
+    }    
+    ul{        
+        font-size: 16px;
+    }   
     i {
         margin-right: 5px;
         font-size: 28px;
@@ -44,10 +50,6 @@
     .player-current-box {
         width: 75%;
     }
-    button {
-        width: 120px;
-        font-size: 16px;
-    }
     .player-name {
         font-size: 30px;
     }
@@ -57,8 +59,11 @@
     }
 }
 @media screen and (max-width: 550px){
-    button {
-        width: 100px;
+    button, summary {
+        width: 105px;
+        font-size: 13px;
+    }
+    ul{        
         font-size: 13px;
     }
     i {
@@ -135,8 +140,11 @@
     .player-current-label {
         font-size: 8px;
     }
-    button {
+    button, summary {
         width: 85px;
+        font-size: 11px;
+    }
+    ul{
         font-size: 11px;
     }
     i {

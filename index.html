@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div id="header" class="col-container">  
-        <div class="one-col">
-            <label for="winningScore" class="winningScoreLabel">How many points would you like to play to?</label><br>
-            <input class="winningScore" type="text" alt="How many points would you like to play to?" /><br> 
-            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>    
-        </div>  
+    <div id="header">  
+        <div class="col-container">  
+            <div class="one-col">
+                <label for="winningScore" class="winningScoreLabel">How many points would you like to play to?</label><br>
+                <input class="winningScore" type="text" placeholder="100" alt="How many points would you like to play to?" />
+            </div>  
+        </div>
     </div>
 
     <div id="main" class="clearfix">
@@ -36,6 +37,7 @@
                
                 <img src="images/dice-5.PNG" alt="Dice" class="dice">
                 <img src="images/dice-5.PNG" alt="2nd Dice" class="dice2">
+                
             </div>
 
             <div class="player-1-panel">
@@ -51,18 +53,24 @@
     </div>
 
     <footer>
-        <div class="col-container">  
-            <div class="one-col">
-                <ul><strong>Game Rules:</strong>
-                    <li>Players will take turns rolling the dice, each player may roll the dice as many times as they want.</li>
-                    <li>To end your turn press the "HOLD" button and your current points will be added to your total points.</li>
-                    <li>The first player to reach the number of points chosen at the beginning of the game without going over wins.</li>
-                    <li>If you go over you will loose all your points.</li>
-                    <li>If you role double 1s you will loose your current points and your turn will be over.</li>
-                    <li>If you role two 6s in a row or double 6s you will loose all your points and your turn will be over.</li>
-                </ul>                 
-            </div>  
-        </div>            
+        <div class="col-container"> 
+            <div class="new-game">
+                <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>    
+            </div>
+            <div class="game-rules">
+                <details>
+                    <summary>Game Rules:</summary>
+                    <ul>
+                        <li>Players will take turns rolling the dice, each player may roll the dice as many times as they want.</li>
+                        <li>To end your turn press the "HOLD" button and your current points will be added to your total points.</li>
+                        <li>The first player to reach the number of points chosen at the beginning of the game without going over wins.</li>
+                        <li>If you go over you will loose all your points.</li>
+                        <li>If you role double 1s you will loose your current points and your turn will be over.</li>
+                        <li>If you role two 6s in a row or double 6s you will loose all your points and your turn will be over.</li>
+                    </ul>  
+                </details> 
+            </div>
+        </div>        
     </footer>
     
     <script src="javaScript/app.js"></script>
