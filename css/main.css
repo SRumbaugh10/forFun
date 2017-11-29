@@ -41,7 +41,7 @@ footer{
 .one-col {
     width:97%;
     display: inline-block;
-    padding:10px;
+    padding:10px 10px 0 10px;
     text-align: center;
 }
 
@@ -51,9 +51,7 @@ ul{
     margin-left: -100%;
     padding: 15px 0 25px 0;
 }
-.winningScore::-webkit-input-placeholder{
-    color: rgba(255, 255, 255,.3);
-}
+
 .player-0-panel,
 .player-1-panel {
     width: 37%;
@@ -75,8 +73,8 @@ ul{
 .new-game, .game-rules{
     width: 50%;
     display: inline-block;
-    margin:.5% 1% 0 1%;
-    padding:5px 10px 0px 10px;
+    margin: 0 1%;
+    padding:0 10px 0px 10px;
     text-align: right;    
 }
 
@@ -190,7 +188,10 @@ summary{padding: 10px 0 0 0;}
     color: #fff;    
     font-size: 25px;
     text-align: center;
-    margin: 15px;
+    margin: 15px 15px 5px 15px;
 }
 
 .winningScore:focus {outline:none;}
+.winningScore::-webkit-input-placeholder{
+    color: rgba(255, 255, 255,.3);
+}
